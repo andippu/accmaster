@@ -2,4 +2,5 @@ spring:
   application:
     name: accmaster-services
   config:
-    import: optional:configserver:http://localhost:9502
+    import: 
+      optional:configserver:http://localhost:9502

@@ -43,7 +43,7 @@ public class Barang {
     private String brChgUser;
 
     @Column (name="BR_CHGDATE" ,length=40)
-    private Date brChgDate;
+    private Date brChgdate;
 
     @Column (name="BR_STATUS" ,length=40)
     private String brStatus;
