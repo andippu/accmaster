@@ -12,5 +12,8 @@ public interface ISatuanRepository extends JpaRepository<Satuan,String> {
 
     @Query(value="select s.satDesc from Satuan s where s.satCode=?1")
     public String getSatDesc(String brCode);
+    
+    @Query(value="select s.satCode, s.satDesc from Satuan s ")
+    public String getSatList();
 
 }
