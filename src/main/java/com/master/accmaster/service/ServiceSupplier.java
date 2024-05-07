@@ -17,5 +17,9 @@ public class ServiceSupplier {
 		return repoSupp.findAll();
 	}
 	
+	public String getSupplierDesc(String supcode) {
+		return repoSupp.getSupplierDesc(supcode);
+	}
+	
 
 }

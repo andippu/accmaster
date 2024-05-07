@@ -20,5 +20,10 @@ public class ControllerSupplier {
 	public List<Supplier> getsupplierList(){
 		return servSupp.getsupplierList();
 	}
+	
+	@GetMapping("/supplier/getsupplierDesc")
+	public String getSupplierDesc(String supcode) {
+		return servSupp.getSupplierDesc(supcode);
+	}
 
 }
