@@ -14,10 +14,7 @@ import java.util.List;
 public interface ISupplierRepository extends JpaRepository<Supplier, Integer> {
 	
 	@Query(value="select s.supName from Supplier s where s.supId=?1")
-
     public String getSupName(String supid);
-
-    public String getSupplierDesc(String supcode);
 	
 }
 
