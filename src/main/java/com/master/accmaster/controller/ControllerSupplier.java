@@ -26,5 +26,10 @@ public class ControllerSupplier {
         String supname= servSupp.getSupNames(supid);
         return supname;
     }
+	
+	@GetMapping("/supplier/getsupplierDesc")
+	public String getSupplierDesc(String supcode) {
+		return servSupp.getSupplierDesc(supcode);
+	}
 
 }

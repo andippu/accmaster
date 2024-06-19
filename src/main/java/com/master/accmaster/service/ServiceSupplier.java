@@ -21,5 +21,10 @@ public class ServiceSupplier {
 	      String supname =  repoSupp.getSupName(supid);
 	      return supname;
 	    }
+	
+	public String getSupplierDesc(String supcode) {
+		return repoSupp.getSupplierDesc(supcode);
+	}
+	
 
 }
