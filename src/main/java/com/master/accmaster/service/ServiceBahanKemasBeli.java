@@ -19,7 +19,7 @@ public class ServiceBahanKemasBeli {
 	      return brname;
 	    }
 
-	    public List<BahanKemasBeli> getAllKemasBeli(){
+    public List<BahanKemasBeli> getAllKemasBeli(){
 	        return repoKemas.findAll();
 	    }
 

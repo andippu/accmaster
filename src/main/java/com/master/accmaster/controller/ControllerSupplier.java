@@ -20,5 +20,11 @@ public class ControllerSupplier {
 	public List<Supplier> getsupplierList(){
 		return servSupp.getsupplierList();
 	}
+	
+	@GetMapping("/supplier/getsupname")
+    public String getSuppName(String supid){
+        String supname= servSupp.getSupNames(supid);
+        return supname;
+    }
 
 }

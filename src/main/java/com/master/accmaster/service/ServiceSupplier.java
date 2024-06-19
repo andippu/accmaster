@@ -17,5 +17,9 @@ public class ServiceSupplier {
 		return repoSupp.findAll();
 	}
 	
+	public String getSupNames(String supid){
+	      String supname =  repoSupp.getSupName(supid);
+	      return supname;
+	    }
 
 }
