@@ -27,6 +27,8 @@ public class ControllerBahanKemasBeli {
     public List<BahanKemasBeli> getAllKemasBeli() {
         return serKemas.getAllKemasBeli();
     }
+    
+    
 
 
 }

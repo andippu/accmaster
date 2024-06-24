@@ -17,7 +17,6 @@ public interface ISupplierRepository extends JpaRepository<Supplier, Integer> {
 
     public String getSupName(String supid);
 
-    public String getSupplierDesc(String supcode);
 	
 }
 

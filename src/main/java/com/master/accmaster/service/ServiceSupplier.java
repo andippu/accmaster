@@ -22,9 +22,7 @@ public class ServiceSupplier {
 	      return supname;
 	    }
 	
-	public String getSupplierDesc(String supcode) {
-		return repoSupp.getSupplierDesc(supcode);
-	}
+
 	
 
 }
