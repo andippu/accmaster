@@ -23,8 +23,8 @@ public class ControllerSupplier {
 	
 	@GetMapping("/supplier/getsupname")
     public String getSuppName(String supid){
-        String supname= servSupp.getSupNames(supid);
-        return supname;
+        return servSupp.getSupNames(supid);
+     
     }
 	
 

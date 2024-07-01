@@ -18,8 +18,8 @@ public class ServiceSupplier {
 	}
 	
 	public String getSupNames(String supid){
-	      String supname =  repoSupp.getSupName(supid);
-	      return supname;
+	      return repoSupp.getSupName(supid);
+	      
 	    }
 	
 
