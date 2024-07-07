@@ -15,6 +15,8 @@ import java.util.List;
 @CrossOrigin("http://localhost:4200")
 public interface IUploadLogErrors extends JpaRepository<UploadLogErrors,UploadLogErrorsCompKey>{
 	 @Query(value = "SELECT to_char(max(UPLOG_ID)) FROM UPLOAD_LOG_ERROR S WHERE S.UPLOAD_TYPE=?1",nativeQuery = true)
-	    public String getMaxError(String type);
+	 public String getMaxError(String type);
+	 
+	 public List<UploadLogErrors> findByUplerrTypeOrderByUplerrId (String type);
 
 }

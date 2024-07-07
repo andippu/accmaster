@@ -17,7 +17,7 @@ public class ServiceUploadLogErrors {
 		return repoLogs.getMaxError(type);
 	}
 	
-	public List<UploadLogErrors> getLogErrList(){
-		return repoLogs.findAll();
+	public List<UploadLogErrors> getLogErrList(String type){
+		return repoLogs.findByUplerrTypeOrderByUplerrId(type);
 	}
 }

@@ -29,7 +29,7 @@ public class UploadLogErrors {
 	 @Column(name="UPLOG_DATE", length=20, nullable = false)
 	 private String uplerrDate;
 	 
-	 @Column(name="UPLOG_ERROR", length=60)
+	 @Column(name="UPLOG_ERROR", length=200)
 	 private String uplerrError;
 	 
 	 

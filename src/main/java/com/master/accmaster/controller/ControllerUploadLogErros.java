@@ -21,8 +21,8 @@ public class ControllerUploadLogErros {
 	}
 	
 	@GetMapping("/uplerr/getlogerrList")
-	public List<UploadLogErrors> getLogErrList(){
-		return servLogs.getLogErrList();
+	public List<UploadLogErrors> getLogErrList(String type){
+		return servLogs.getLogErrList(type);
 	}
 
 }
