@@ -35,6 +35,22 @@ public class ServiceTUploadFiles {
 		repotufl.save(fileEntity);
     }
 	
+	public void saveFilePBO(MultipartFile file) throws IOException {
+		TUploadFiles fileEntity = new TUploadFiles();
+		fileEntity.setTuflName(file.getOriginalFilename());
+		fileEntity.setTuflType("PBO");
+		fileEntity.setTuflFiles(file.getBytes());
+		repotufl.save(fileEntity);
+    }
+	
+	public void saveFileVPH(MultipartFile file) throws IOException {
+		TUploadFiles fileEntity = new TUploadFiles();
+		fileEntity.setTuflName(file.getOriginalFilename());
+		fileEntity.setTuflType("VPH");
+		fileEntity.setTuflFiles(file.getBytes());
+		repotufl.save(fileEntity);
+    }
+	
 	
 	
 
