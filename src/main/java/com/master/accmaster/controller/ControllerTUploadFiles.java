@@ -40,5 +40,10 @@ public class ControllerTUploadFiles {
     public void uploadFilevph(@RequestParam("file") MultipartFile file) throws IOException {
 		servtufl.saveFileVPH(file);
     }
+	
+	@PostMapping("/upfiles/saveuploadfilettb")
+    public void uploadFilettb(@RequestParam("file") MultipartFile file) throws IOException {
+		servtufl.saveFileTTB(file);
+    }
 
 }
