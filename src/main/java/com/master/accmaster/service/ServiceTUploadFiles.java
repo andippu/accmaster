@@ -59,6 +59,13 @@ public class ServiceTUploadFiles {
 		repotufl.save(fileEntity);
     }
 	
+	public void saveFileVPJ(MultipartFile file) throws IOException {
+		TUploadFiles fileEntity = new TUploadFiles();
+		fileEntity.setTuflName(file.getOriginalFilename());
+		fileEntity.setTuflType("VPJ");
+		fileEntity.setTuflFiles(file.getBytes());
+		repotufl.save(fileEntity);
+    }
 	
 	
 
