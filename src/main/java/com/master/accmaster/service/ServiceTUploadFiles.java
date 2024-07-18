@@ -67,6 +67,14 @@ public class ServiceTUploadFiles {
 		repotufl.save(fileEntity);
     }
 	
+	public void saveFileLPH(MultipartFile file) throws IOException {
+		TUploadFiles fileEntity = new TUploadFiles();
+		fileEntity.setTuflName(file.getOriginalFilename());
+		fileEntity.setTuflType("LPH");
+		fileEntity.setTuflFiles(file.getBytes());
+		repotufl.save(fileEntity);
+    }
+	
 	
 
 }
