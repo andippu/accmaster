@@ -55,4 +55,14 @@ public class ControllerTUploadFiles {
     public void uploadFileLPH(@RequestParam("file") MultipartFile file) throws IOException {
 		servtufl.saveFileLPH(file);
     }
+	
+	@PostMapping("/upfiles/saveuploadfiletb1")
+    public void uploadFiletb1(@RequestParam("file") MultipartFile file) throws IOException {
+		servtufl.saveFileTB1(file);
+    }
+	
+	@PostMapping("/upfiles/saveuploadfiletb2")
+    public void uploadFiletb2(@RequestParam("file") MultipartFile file) throws IOException {
+		servtufl.saveFileTB2(file);
+    }
 }
