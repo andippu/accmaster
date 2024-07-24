@@ -99,6 +99,38 @@ public class ServiceTUploadFiles {
 		repotufl.save(fileEntity);
     }
 	
+	public void saveFileVPM(MultipartFile file) throws IOException {
+		TUploadFiles fileEntity = new TUploadFiles();
+		fileEntity.setTuflName(file.getOriginalFilename());
+		fileEntity.setTuflType("VPM");
+		fileEntity.setTuflFiles(file.getBytes());
+		repotufl.save(fileEntity);
+    }
+	
+	public void saveFileVEX(MultipartFile file) throws IOException {
+		TUploadFiles fileEntity = new TUploadFiles();
+		fileEntity.setTuflName(file.getOriginalFilename());
+		fileEntity.setTuflType("VEX");
+		fileEntity.setTuflFiles(file.getBytes());
+		repotufl.save(fileEntity);
+    }
+	
+	public void saveFileVPY(MultipartFile file) throws IOException {
+		TUploadFiles fileEntity = new TUploadFiles();
+		fileEntity.setTuflName(file.getOriginalFilename());
+		fileEntity.setTuflType("VPY");
+		fileEntity.setTuflFiles(file.getBytes());
+		repotufl.save(fileEntity);
+    }
+	
+	public void saveFileVUC(MultipartFile file) throws IOException {
+		TUploadFiles fileEntity = new TUploadFiles();
+		fileEntity.setTuflName(file.getOriginalFilename());
+		fileEntity.setTuflType("VUC");
+		fileEntity.setTuflFiles(file.getBytes());
+		repotufl.save(fileEntity);
+    }
+	
 	
 
 }
