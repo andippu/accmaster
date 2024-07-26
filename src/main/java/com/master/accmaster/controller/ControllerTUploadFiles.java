@@ -73,21 +73,21 @@ public class ControllerTUploadFiles {
 	
 	@PostMapping("/upfiles/saveuploadfilevpm")
     public void uploadFilevpm(@RequestParam("file") MultipartFile file) throws IOException {
-		servtufl.saveFileTujud(file);
+		servtufl.saveFileVPM(file);
     }
 	
 	@PostMapping("/upfiles/saveuploadfileexp")
     public void uploadFileexp(@RequestParam("file") MultipartFile file) throws IOException {
-		servtufl.saveFileTujud(file);
+		servtufl.saveFileVEXP(file);
     }
 	
 	@PostMapping("/upfiles/saveuploadfilevpy")
     public void uploadFilevpy(@RequestParam("file") MultipartFile file) throws IOException {
-		servtufl.saveFileTujud(file);
+		servtufl.saveFileVPY(file);
     }
 	
 	@PostMapping("/upfiles/saveuploadfileuci")
     public void uploadFileuci(@RequestParam("file") MultipartFile file) throws IOException {
-		servtufl.saveFileTujud(file);
+		servtufl.saveFileVUC(file);
     }
 }

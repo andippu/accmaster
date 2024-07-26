@@ -107,7 +107,7 @@ public class ServiceTUploadFiles {
 		repotufl.save(fileEntity);
     }
 	
-	public void saveFileVEX(MultipartFile file) throws IOException {
+	public void saveFileVEXP(MultipartFile file) throws IOException {
 		TUploadFiles fileEntity = new TUploadFiles();
 		fileEntity.setTuflName(file.getOriginalFilename());
 		fileEntity.setTuflType("VEX");
